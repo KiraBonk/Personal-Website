@@ -1,11 +1,16 @@
-import { Center, Container, Flex, VStack, Box } from "@chakra-ui/react";
-
-import Navbar from "../src/components/navbar";
+import {
+  Center,
+  Container,
+  Flex,
+  VStack,
+  Box,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
 
 const IndexPage = () => (
   <Box>
-    <Navbar />
-    <Container maxW="container.xl" p={0}>
+    <Container maxW="container.md" p={0} centerContent>
       <Flex h="100vh" py={20}>
         <Center>
           <VStack
@@ -14,7 +19,12 @@ const IndexPage = () => (
             p={10}
             spacing={10}
             alignItems="flex-start"
-          ></VStack>
+          >
+            <Heading>test</Heading>
+            <Text>1</Text>
+            <Text>2</Text>
+            <Text>3</Text>
+          </VStack>
         </Center>
       </Flex>
     </Container>
